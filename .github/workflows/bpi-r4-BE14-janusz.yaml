@@ -59,7 +59,7 @@ jobs:
 
       - name: Configure firmware image
         run: |
-          curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/mediatek/mt7988a/bpi-r4 > .config
+          curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/mediatek/mt7988a/bpi-r4-poe > .config
           curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/common/luci >> .config
           curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/common/snapshot-short >> .config
           sed -i '/CONFIG_PACKAGE_wpad-mbedtls=y/d' .config
