@@ -66,8 +66,6 @@ jobs:
           curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/common/openssl >> .config
           curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/common/lte-5g-modem >> .config
           curl -SL https://raw.githubusercontent.com/danpawlik/openwrt-builder/master/configs/common/community >> .config
-
-          echo "CONFIG_PACKAGE_mt7988-2p5g-phy-firmware=y" >> .config
           
       - name: Run defconfig
         run: |
